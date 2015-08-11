@@ -14,6 +14,8 @@
 		33F220FC1B4D0979000F77F6 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 33F220FB1B4D0979000F77F6 /* Images.xcassets */; };
 		33F220FF1B4D0979000F77F6 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 33F220FD1B4D0979000F77F6 /* LaunchScreen.xib */; };
 		33F2210B1B4D0979000F77F6 /* JDWeakTimerDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 33F2210A1B4D0979000F77F6 /* JDWeakTimerDemoTests.m */; };
+		33F221161B4D09F6000F77F6 /* TimerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 33F221151B4D09F6000F77F6 /* TimerViewController.m */; };
+		33F2211E1B4D0A89000F77F6 /* JDWeakTimerTarget.m in Sources */ = {isa = PBXBuildFile; fileRef = 33F2211D1B4D0A89000F77F6 /* JDWeakTimerTarget.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +42,10 @@
 		33F221041B4D0979000F77F6 /* JDWeakTimerDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JDWeakTimerDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		33F221091B4D0979000F77F6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		33F2210A1B4D0979000F77F6 /* JDWeakTimerDemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JDWeakTimerDemoTests.m; sourceTree = "<group>"; };
+		33F221141B4D09F6000F77F6 /* TimerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TimerViewController.h; sourceTree = "<group>"; };
+		33F221151B4D09F6000F77F6 /* TimerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TimerViewController.m; sourceTree = "<group>"; };
+		33F2211C1B4D0A89000F77F6 /* JDWeakTimerTarget.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JDWeakTimerTarget.h; sourceTree = "<group>"; };
+		33F2211D1B4D0A89000F77F6 /* JDWeakTimerTarget.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JDWeakTimerTarget.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,10 +87,13 @@
 		33F220ED1B4D0979000F77F6 /* JDWeakTimerDemo */ = {
 			isa = PBXGroup;
 			children = (
+				33F2211B1B4D0A89000F77F6 /* JDWeakTimerTarget */,
 				33F220F21B4D0979000F77F6 /* AppDelegate.h */,
 				33F220F31B4D0979000F77F6 /* AppDelegate.m */,
 				33F220F51B4D0979000F77F6 /* ViewController.h */,
 				33F220F61B4D0979000F77F6 /* ViewController.m */,
+				33F221141B4D09F6000F77F6 /* TimerViewController.h */,
+				33F221151B4D09F6000F77F6 /* TimerViewController.m */,
 				33F220F81B4D0979000F77F6 /* Main.storyboard */,
 				33F220FB1B4D0979000F77F6 /* Images.xcassets */,
 				33F220FD1B4D0979000F77F6 /* LaunchScreen.xib */,
@@ -117,6 +126,15 @@
 				33F221091B4D0979000F77F6 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		33F2211B1B4D0A89000F77F6 /* JDWeakTimerTarget */ = {
+			isa = PBXGroup;
+			children = (
+				33F2211C1B4D0A89000F77F6 /* JDWeakTimerTarget.h */,
+				33F2211D1B4D0A89000F77F6 /* JDWeakTimerTarget.m */,
+			);
+			path = JDWeakTimerTarget;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -219,7 +237,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				33F221161B4D09F6000F77F6 /* TimerViewController.m in Sources */,
 				33F220F71B4D0979000F77F6 /* ViewController.m in Sources */,
+				33F2211E1B4D0A89000F77F6 /* JDWeakTimerTarget.m in Sources */,
 				33F220F41B4D0979000F77F6 /* AppDelegate.m in Sources */,
 				33F220F11B4D0979000F77F6 /* main.m in Sources */,
 			);
